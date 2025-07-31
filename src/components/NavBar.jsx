@@ -69,12 +69,7 @@ function NavBar({ onSearch }) {
                     <div className="flex flex-1 items-center justify-between sm:justify-start sm:space-x-8">
                         <div className="flex shrink-0 items-center">
                             <Link to="/" className="flex items-center">
-                                <img
-                                    className="h-10 w-auto transition-transform duration-300 hover:scale-105"
-                                    src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                                    alt="Your Company"
-                                />
-                                <span className="ml-3 text-xl font-bold text-white hidden sm:block">MyApp</span>
+                                <span className="ml-3 text-xl font-bold text-white hidden sm:block">Weather</span>
                             </Link>
                         </div>
 
