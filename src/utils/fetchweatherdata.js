@@ -1,6 +1,5 @@
 export async function fetchWeatherData(city = 'Kathmandu', apiKey) {
     try {
-        // Fetch geolocation
         const geoRes = await fetch(
             `https://api.openweathermap.org/geo/1.0/direct?q=${encodeURIComponent(city)}&limit=1&appid=${apiKey}`
         );
@@ -50,7 +49,6 @@ export async function fetchWeatherData(city = 'Kathmandu', apiKey) {
 
         const forecastData = await forecastRes.json();
 
-        // Process forecast into daily summaries
         const dailyMap = {};
 
         forecastData.list.forEach(item => {

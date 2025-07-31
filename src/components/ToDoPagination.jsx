@@ -3,7 +3,7 @@ import TodoList from './ToDoList';
 
 const ITEMS_PER_LOAD = 10;
 
-export default function TodoLoader({ todos, doneMap, onToggleDone, children }) {
+export default function TodoPagination({ todos, doneMap, onToggleDone, children }) {
     const [visibleCount, setVisibleCount] = useState(ITEMS_PER_LOAD);
 
     const visibleTodos = todos.slice(0, visibleCount);
